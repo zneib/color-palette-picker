@@ -2,12 +2,17 @@
   export let color = ''
 </script>
 
-<div>
-  <button class="grid-color" style="background-color: {color}" on:click={navigator.clipboard.writeText(color)}></button>
+<div class="small-color">
+  <button class="grid-color" style="background-color: {color}" on:click={navigator.clipboard.writeText(color)}>
+  </button>
   <p>{color}</p>
 </div>
 
 <style>
+  .small-color {
+    display: flex;
+    align-items: center;
+  }
   .grid-color {
     width: 32px;
     height: 32px;
@@ -17,6 +22,7 @@
     cursor: pointer;
   }
   p {
-    margin: 0;
+    margin-left: 5px;
+    font-size: 10px;
   }
 </style>
