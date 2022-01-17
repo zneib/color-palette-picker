@@ -44,8 +44,6 @@
 					{/each}
 				</div>
 			</div>
-		</div>
-		<div class="supporting-section">
 			<div class="color-wrapper">
 				<h4>Red</h4>
 				<div class="grid-small">
@@ -68,8 +66,8 @@
 
 <style>
 	.grid {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
+		display: flex;
+		justify-content: space-between;
 	}
 	.grid-small {
 		columns: 2;
