@@ -11,6 +11,11 @@
   .large-color {
     transition: .3s;
   }
+  @media(max-width: 1286px) {
+		.large-color {
+			margin-right: 10px;
+		}
+	}
   .large-color:hover {
     transform: scale(1.2);
   }

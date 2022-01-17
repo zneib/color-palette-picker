@@ -71,7 +71,13 @@
 <style>
 	.grid {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
+	}
+	@media(max-width: 1286px) {
+		.grid {
+			justify-content: flex-start;
+		}
 	}
 	.grid-small {
 		columns: 2;
