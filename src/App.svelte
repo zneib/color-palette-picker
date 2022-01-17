@@ -10,26 +10,30 @@
 </script>
 
 <main>
-	Palette 1
+	<h2>Palette 1</h2>
 	<div>
-		<h3>Primary</h3>
-		<h4>Cyan</h4>
-		<div class="grid">
-			{#each paletteOnePrimary as color}
-				<Color {color} />
-			{/each}
+		<div class="color-section">
+			<h3>Primary</h3>
+			<h5>Cyan</h5>
+			<div class="grid">
+				{#each paletteOnePrimary as color}
+					<Color {color} />
+				{/each}
+			</div>
 		</div>
-		<h3>Neutrals</h3>
-		<h4>Blue Grey</h4>
-		<div class="grid">
-			{#each paletteOneNeutrals as color}
-				<Color {color} />
-			{/each}
+		<div class="color-section">
+			<h3>Neutrals</h3>
+			<h5>Blue Grey</h5>
+			<div class="grid">
+				{#each paletteOneNeutrals as color}
+					<Color {color} />
+				{/each}
+			</div>
 		</div>
-		<h3>Supporting</h3>
+		<h3 class="supporting-header">Supporting</h3>
 		<div class="supporting-section">
 			<div class="color-wrapper">
-				<h4>Indigo</h4>
+				<h5>Indigo</h5>
 				<div class="grid-small">
 					{#each paletteOneSupportingOne as color}
 						<SmallColor {color} />
@@ -37,7 +41,7 @@
 				</div>
 			</div>
 			<div class="color-wrapper">
-				<h4>Pink</h4>
+				<h5>Pink</h5>
 				<div class="grid-small">
 					{#each paletteOneSupportingTwo as color}
 						<SmallColor {color} />
@@ -45,7 +49,7 @@
 				</div>
 			</div>
 			<div class="color-wrapper">
-				<h4>Red</h4>
+				<h5>Red</h5>
 				<div class="grid-small">
 					{#each paletteOneSupportingThree as color}
 						<SmallColor {color} />
@@ -53,7 +57,7 @@
 				</div>
 			</div>
 			<div class="color-wrapper">
-				<h4>Yellow</h4>
+				<h5>Yellow</h5>
 				<div class="grid-small">
 					{#each paletteOneSupportingFour as color}
 						<SmallColor {color} />
@@ -72,6 +76,19 @@
 	.grid-small {
 		columns: 2;
 		column-width: 120px;
+	}
+	.color-section {
+		margin-top: 50px;
+	}
+	h3 {
+		margin: 0;
+	}
+	h5 {
+		margin: 10px 0;
+		color: rgb(101, 101, 101);
+	}
+	.supporting-header {
+		margin-top: 75px;
 	}
 	.color-wrapper {
 		margin: 0 50px;

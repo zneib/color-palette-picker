@@ -2,14 +2,20 @@
   export let color = ''
 </script>
 
-<div>
+<div class="large-color">
   <button class="grid-color" style="background-color: {color}" on:click={navigator.clipboard.writeText(color)}></button>
   <p>{color}</p>
 </div>
 
 <style>
+  .large-color {
+    transition: .3s;
+  }
+  .large-color:hover {
+    transform: scale(1.2);
+  }
   .grid-color {
-    width: 140px;
+    width: 130px;
     height: 50px;
     outline: none;
     border: none;

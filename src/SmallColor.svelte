@@ -12,6 +12,10 @@
   .small-color {
     display: flex;
     align-items: center;
+    transition: .3s;
+  }
+  .small-color:hover {
+    transform: scale(1.2);
   }
   .grid-color {
     width: 32px;
