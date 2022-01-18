@@ -102,6 +102,7 @@
 	.supporting-section {
 		width: 100%;
 		display: flex;
+		flex-wrap: wrap;
 		margin-bottom: 20px;
 	}
 </style>
